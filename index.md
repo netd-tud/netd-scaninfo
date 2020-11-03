@@ -7,7 +7,7 @@ You have probably contacted our scanning node because you see incoming scan traf
 Scan Type | Description | Frequency
 ------------ | ------------- | -----------
 DNS Scan (complete) | Complete IPv4 address space scan which finds recursive DNS resolvers | Rare
-DNS Scan (limited) | Scan towards recursive DNS resolvers only | Occasional
+DNS Scan (limited) | Targeted scan towards recursive DNS resolvers only | Occasional
 
 
 ## Counter-Measures
