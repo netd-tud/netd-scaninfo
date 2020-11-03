@@ -16,13 +16,13 @@ You do not want to be scanned? Read on.
 
 ### Your Blacklists
 
-Our cans have fairly simple signatures:
+Our scans have fairly simple signatures:
 
-  1.  We use the default zmap IP.ID: `54321`.
-  2.  We initiate scans with the maximum IP.TTL: `255`.
-  3.  Scans originate only from a single IP source address `141.22.28.227`.
-  
-We recommend adding firewall rules for signature `1.` and `2.` in your network. This way you will drop traffic from any other unwanted Zmap scan.
+  1.  We use the default zmap IP.ID: `54321`
+  2.  We initiate scans with the maximum IP.TTL: `255`
+  3.  Scans originate only from a single IP source address `141.22.28.227`
+
+We recommend adding firewall rules for signature `1.` and `2.` in your network. This way you will drop traffic from any unwanted zmap scan.
 
 ### Our Blacklists
 
