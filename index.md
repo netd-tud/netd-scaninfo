@@ -10,7 +10,7 @@ DNS Scan (complete) | Complete IPv4 address space scan which finds recursive DNS
 DNS Scan (limited) | Targeted scan towards recursive DNS resolvers only | Occasional
 
 
-## Counter-Measures
+## Countermeasures
 
 You do not want to be scanned? Read on.
 
