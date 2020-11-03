@@ -22,7 +22,7 @@ Our scans have fairly simple signatures:
   2.  We initiate scans with the maximum IP.TTL: `255`
   3.  Scans originate only from a single IP source address `141.22.28.227`
 
-We recommend adding firewall rules for signature `1.` and `2.` in your network. This way you will drop traffic from any unwanted zmap scan.
+We recommend adding firewall rules for signature `1.` and `2.`. This way you will drop traffic from any unwanted zmap scan.
 
 ### Our Blacklists
 
