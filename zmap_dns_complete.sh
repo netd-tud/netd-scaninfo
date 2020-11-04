@@ -2,7 +2,7 @@
 
 # config
 request="A,google.com"
-logfile="zmap_dns_complete.log"
+logfile="zmap_dns_complete_$(date +%s).log"
 interface="eno1"
 node_ip="141.22.28.227"
 
