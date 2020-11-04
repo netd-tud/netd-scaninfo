@@ -3,7 +3,7 @@
 # config
 interface="eno1"
 node_ip="141.22.28.227"
-request="A,google.com"
+request="A,dnsscan.shadowserver.org"
 
 dir_json="json_dns_complete"
 mkdir $dir_json
