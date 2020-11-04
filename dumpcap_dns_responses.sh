@@ -7,9 +7,9 @@ node_ip="141.22.28.227"
 pcap_max_size="100000"
 
 # debug
-interface="wlp4s0"
-node_ip="87.77.161.135"
-pcap_max_size="10"
+# interface="wlp4s0"
+# node_ip="87.77.161.135"
+# pcap_max_size="10"
 
 dir_pcaps="pcaps_dns_complete"
 mkdir $dir_pcaps
