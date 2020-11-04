@@ -19,4 +19,4 @@ zmap \
     --seed=13371337 \
     --blocklist-file=/etc/zmap/blocklist.conf \
     --rate=25000 \
-    -O json -o $logfile
+    -O json --output-fields='*' -o $logfile
