@@ -8,7 +8,7 @@ interface="eno1"
 node_ip="141.22.28.227"
 
 # run zmap
-sudo $zmap \
+$zmap \
     --interface="$interface" \
     --source-ip="$node_ip" \
     --target-port=53 \

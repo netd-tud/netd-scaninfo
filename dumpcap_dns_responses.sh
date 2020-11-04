@@ -16,7 +16,7 @@ mkdir $dir_pcaps
 name_pcaps="${dir_pcaps}/dns_complete.pcap"
 scan_filter="dst $node_ip and not icmp and udp src port 53"
 
-sudo dumpcap -Pi "$interface" \
+dumpcap -Pi "$interface" \
     -f "$scan_filter" \
     -w "$name_pcaps" \
     -b filesize:"$pcap_max_size"
