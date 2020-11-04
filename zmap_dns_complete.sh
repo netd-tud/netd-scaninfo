@@ -19,4 +19,6 @@ zmap \
     --seed=13371337 \
     --blocklist-file=/etc/zmap/blocklist.conf \
     --rate=25000 \
-    -O json --output-fields='saddr,success,app_success' -o $logfile
+    -O json -o $logfile \
+    --output-fields="saddr,success,app_success" \
+    --output-filter="success = 1 && app_success = 1"
