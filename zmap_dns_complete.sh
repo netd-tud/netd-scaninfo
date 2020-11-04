@@ -6,7 +6,7 @@ node_ip="141.22.28.227"
 request="A,google.com"
 
 dir_json="json_dns_complete"
-mkdir $dir_pcaps
+mkdir $dir_json
 logfile="${dir_json}/zmap_dns_complete_$(date +%s).log"
 
 # run zmap
