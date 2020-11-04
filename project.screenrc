@@ -9,6 +9,6 @@ hardstatus 	string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%
 screen -t sh bash
 screen -t htop htop
 screen -t bmon bmon
-screen -t web sudo ./minimal_webserver.sh
-#screen -t bgpupdate ./src/shell/S02demo_bgpupdate.sh
-#screen -t webserver ./src/shell/S03demo_webserver.sh
+screen -t web sudo ./nc_minimal_webserver.sh
+screen -t dump sudo ./dumpcap_dns_responses.sh
+screen -t zmap sudo ./zmap_dns_complete.sh
