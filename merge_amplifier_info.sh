@@ -2,7 +2,7 @@
 
 # read all ips from the pcap
 pcap_dir="pcaps_dns_complete"
-for pcap in $(realpath "{pcap_dir}/*.pcap" | head -n 3)
+for pcap in $(realpath "${pcap_dir}/*.pcap" | head -n 3)
 do
     ./tshark_sanitize_ip_src.sh $pcap
 done | sort | uniq | gzip > pcap_sources.txt.gz
