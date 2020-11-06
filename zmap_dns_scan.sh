@@ -36,15 +36,16 @@ if [[ "$mode" == "complete" ]]; then
         --output-filter="success = 1 && app_success = 1"
 
 elif [[ "$mode" == "limited" ]]; then
+    # we might have to decrease log level, many txt len warnings
     zmap \
         --target-port=53 \
         --probe-module=dns \
         --probe-args="$dns_request_limited" \
         --blocklist-file=/etc/zmap/blocklist.conf \
-        --rate=25000 \
+        --rate=15000 \
         -O json -o $logfile \
         --output-fields="saddr,success,app_success" \
-        --allowlist-file=<(zcat amp_src.txt.gz | shuffle)
+        --allowlist-file=<(zcat amp_src.txt.gz | shuf)
 
 else
     echo "unknown scan mode"
