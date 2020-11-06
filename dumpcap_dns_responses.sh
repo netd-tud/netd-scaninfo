@@ -18,4 +18,4 @@ dumpcap -Pi "$interface" \
     -b filesize:"$pcap_max_size"
 
 # fix access rights
-chmod -R 660 "${dir_pcaps}"
+chmod -R 770 "${dir_pcaps}"

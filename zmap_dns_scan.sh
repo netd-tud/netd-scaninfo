@@ -53,4 +53,4 @@ else
 fi
 
 # fix access rights
-chmod -R 660 "${dir_json}"
+chmod -R 770 "${dir_json}"
