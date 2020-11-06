@@ -1,10 +1,7 @@
 #!/bin/bash
 
 # config
-interface="eno1"
-node_ip="141.22.28.227"
-request="A,dnsscan.shadowserver.org"
-
+source config_file
 dir_json="json_dns_complete"
 mkdir $dir_json
 logfile="${dir_json}/zmap_dns_complete_$(date +%s).log"
@@ -27,7 +24,7 @@ zmap \
     --source-ip="$node_ip" \
     --target-port=53 \
     --probe-module=dns \
-    --probe-args="$request" \
+    --probe-args="$dns_request_complete" \
     --seed=13371337 \
     --blocklist-file=/etc/zmap/blocklist.conf \
     --rate=25000 \

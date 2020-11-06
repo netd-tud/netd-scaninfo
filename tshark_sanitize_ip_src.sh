@@ -1,7 +1,9 @@
 #!/bin/bash
 
-domain="dnsscan.shadowserver.org"
-ip="184.105.143.133"
+source config_file
+domain="${dns_response_complete_domain}"
+ip="${dns_response_complete_ip}"
+
 dns_sanitize="ip and not icmp and udp and udp.srcport==53 and dns"
 dns_sanitize+=" and dns.qry.name==${domain} and dns.flags.response==1"
 dns_sanitize+=" and dns.flags.rcode==0 and dns.flags.recavail==1"
