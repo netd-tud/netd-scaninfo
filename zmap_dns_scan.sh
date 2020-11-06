@@ -30,7 +30,7 @@ if [[ "$mode" == "complete" ]]; then
         --probe-args="$dns_request_complete" \
         --seed=13371337 \
         --blocklist-file=/etc/zmap/blocklist.conf \
-        --rate=20000 \
+        --rate=25000 \
         -O json -o $logfile \
         --output-fields="saddr" \
         --output-filter="success = 1 && app_success = 1"
