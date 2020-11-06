@@ -16,3 +16,6 @@ dumpcap -Pi "$interface" \
     -f "$scan_filter" \
     -w "$name_pcaps" \
     -b filesize:"$pcap_max_size"
+
+# fix access rights
+chmod -R 660 "${dir_pcaps}"

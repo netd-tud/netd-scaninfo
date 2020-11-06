@@ -51,3 +51,6 @@ else
     echo "unknown scan mode"
     exit -1
 fi
+
+# fix access rights
+chmod -R 660 "${dir_json}"
