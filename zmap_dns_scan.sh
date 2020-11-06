@@ -33,7 +33,8 @@ if [[ "$mode" == "complete" ]]; then
         --rate=25000 \
         -O json -o $logfile \
         --output-fields="saddr" \
-        --output-filter="success = 1 && app_success = 1"    exit 0
+        --output-filter="success = 1 && app_success = 1"
+
 elif [[ "$mode" == "limited" ]]; then
     zmap \
         --target-port=53 \
@@ -44,6 +45,7 @@ elif [[ "$mode" == "limited" ]]; then
         -O json -o $logfile \
         --output-fields="saddr,success,app_success" \
         --allowlist-file=<(zcat amp_src.txt.gz | shuffle)
+
 else
     echo "unknown scan mode"
     exit -1
