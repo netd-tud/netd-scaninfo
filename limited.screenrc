@@ -10,5 +10,5 @@ screen -t sh bash
 screen -t htop htop
 screen -t bmon bmon
 screen -t web sudo ./nc_minimal_webserver.sh
-screen -t dump sudo ./dumpcap_dns_responses.sh
-screen -t zmap sudo ./zmap_dns_limited.sh
+screen -t dump sudo ./dumpcap_dns_responses.sh limited
+screen -t zmap sudo ./zmap_dns_scan.sh limited

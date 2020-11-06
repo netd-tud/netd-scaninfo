@@ -5,10 +5,11 @@
 source config_file
 pcap_max_size="100000"
 
-dir_pcaps="pcaps_dns_complete"
+mode=$1
+dir_pcaps="pcaps_dns_$mode"
 mkdir $dir_pcaps
-name_pcaps="${dir_pcaps}/dns_complete_$(date +%s).pcap"
-scan_filter="dst $node_ip and not icmp and udp src port 53"
+name_pcaps="${dir_pcaps}/dns_${mode}_$(date +%s).pcap"
+scan_filter="dst ${node_ip} and not icmp and udp src port 53"
 
 # capture filter is only the first sanity check
 dumpcap -Pi "$interface" \
