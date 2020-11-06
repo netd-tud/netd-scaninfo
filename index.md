@@ -31,4 +31,4 @@ Of course, we can also exclude your network from our scans. This way nothing wil
 
 ## Contact
 
-DNS research is conducted by [Marcin Nawrocki](https://www.nawrocki.berlin). An email is enough, we will sort it out.
+This is a mutual project between HAW Hamburg and Freie Universität Berlin. DNS research is conducted by [Marcin Nawrocki](https://www.nawrocki.berlin). An email is enough, we will sort it out.
