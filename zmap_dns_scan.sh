@@ -41,7 +41,7 @@ elif [[ "$mode" == "limited" ]]; then
         --probe-module=dns \
         --probe-args="$dns_request_limited" \
         --blocklist-file=/etc/zmap/blocklist.conf \
-        --rate=25000 \
+        --rate=50000 \
         -O json -o $logfile \
         --output-fields="saddr,success,app_success" \
         --allowlist-file=<(zcat amp_src.txt.gz | shuf) \
