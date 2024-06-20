@@ -1,3 +1,8 @@
+---
+layout: home 
+title:  "Home"
+---
+
 ## Internet-wide Scans for a Better Internet
 
 You have probably found our scanning node because you see incoming scan traffic reaching your network. You do not need to worry, we are a research team focusing on improving the Internet security. Currently, we are monitoring the landscape of amplification attacks.

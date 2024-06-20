@@ -1,4 +1,9 @@
-theme: jekyll-theme-minimal
-title: [NETD Research Scans]
-description: [Internet-wide Scans for a Better Internet]
+title: "NETD Research Scans"
+description: [Internet-wide Scans for a Better Internet] 
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://scaninfo.secnow.net" # the base hostname & protocol for your site
 logo: logo.png
+
+navbar_list:
+- name: Home
+  link: /
